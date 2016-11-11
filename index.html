@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Excercise 2 Botstrap</title>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" style="margin-right:0;">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" style="padding-left:0px"><img src="img/logo.png" style="height:50px;" alt="logo image not found"></a>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#"><span class="usricn"><span class="glyphicon glyphicon-home"></span></span>Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Management</a>
+							</li>
+							<li>
+								<a href="#">Technology</a>
+							</li>
+							<li>
+								<a href="#">Finance </a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#modalcontact" data-toggle="modal">Contact</a>
+					</li>
+				</ul>
+				<form class="navbar-form pull-left" id="SearchBox" role="search" style="margin-bottom:5px;">
+					<input type="text" class="form-control" id="SearchInPut" placeholder="Search here...">
+					<button type="Submit" class="btn btn-default" style="height:30px;" ><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 31px;"><span class="usricn"><span class="glyphicon glyphicon-user"></span></span> Account<span class="caret"></span></a>	
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#"><span class="usricn"><span class="glyphicon glyphicon-user"></span></span>My Profile</a>
+							</li>
+							<li>
+								<a href="#"><span class="usricn"><span class="glyphicon glyphicon-briefcase"></span></span>Orders</a>
+							</li>
+							<li>
+								<a href="#"><span class="usricn"><span class="glyphicon glyphicon-off"></span></span>Logout</a>
+							</li>
+							<li>
+								<a href="#"><span class="usricn"><span class="glyphicon glyphicon-cog"></span></span>Settings</a>
+							</li>
+						</ul>
+					</li><!-- end of dropdown for Account -->	
+				</ul>
+			</div>
+
+		</div><!-- container inside navbar -->
+		</div>	<!-- Nav bar -->
+		<!--Modal Login -->
+		<div class="container">
+			<div class="row">
+				<div class="modal fade in" id="modalcontact">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<img src="img/logo-color.png" alt="Logo not there" style="width:52px;height:52px;margin-left:10%;">
+							</div>
+							<div class="modal-body">
+
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class=" control-label col-lg-2" for="inputName">Mail id</label>
+										<div class="col-lg-10">
+											<input class="form-control" placeholder="Email address or phone number" type="text" name="name" id="inputName">
+										</div>
+
+										<label class="col-lg-2 control-label" for="inputmessage">Message</label>
+										<div class="col-lg-10">
+											<input class="form-control" placeholder="Your message here..." type="text" name="name" id="inputmessage">
+										</div>
+										<div class="LoginButtons" style="padding-top:10px;margin-top:10px;padding-left:113px;">
+											<button class="btn btn-success " type="submit" id="send">Login</button>
+											<button class="btn btn-default "  data-dismiss="modal" id="cancelbtn">Cancel</button>
+										</div>
+
+									</div>
+
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="carousel slide" id="myCarousel">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+			<li data-slide-to="1" data-target="#myCarousel"></li>
+			<li data-slide-to="2" data-target="#myCarousel"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active	" id="slide1">
+				<div class="carousel-caption">
+					<h4>Winston S. Churchill</h4>
+					<p>"Success is not final; failure is not fatal: It is the courage to continue that counts."</p>
+				</div>
+			</div>
+			<div class="item" id="slide2">
+				<div class="carousel-caption">
+					<h4>Herman Melville</h4>
+					<p>" It is better to fail in originality than to succeed in imitation."</p>
+				</div>
+			</div>
+			<div class="item" id="slide3">
+				<div class="carousel-caption">
+					<h4>Colin R. Davis</h4>
+					<p>"The road to success and the road to failure are almost exactly the same.</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="usricn"><span class="icon-prev"></span></span></a>
+		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="usricn"><span class="icon-next"></span></span></a>
+	</div>
+	<div class="container">
+		<div class="row" id="bigCallout"><!-- kind of heading after carousel -->
+			<div class="col-12">
+				<div class="well well-small visible-sm visible-xs">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone-alt">Call us</span></a>
+				</div>
+				<div class="well">
+					<div class="page-header">
+						<h1>Providing Bussiness <span class="usricn">i</span>deas<small> Reviewd by the world best Economist</small></h1>		
+					</div>
+					<p class="lead">POPULAR NEWS AND ARTICLES ABOUT BUSINESS IDEAS</p>	
+					<a href="" class="btn btn-primary">Read More</a>
+				</div>					
+			</div>
+		</div>
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h1>Few Quotes</h1>
+				<div class="tabbable" style="border-right: 1px solid lightgrey;">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab"> Section1</a></li>
+						<li><a href="#tab2" data-toggle="tab"> Section2</a></li>
+						<li><a href="#tab3" data-toggle="tab"> Section3</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<img class="tabImage" src="img/Graham-Quote01.jpg" alt="Quote of Graham" style="width:300px; padding-top:5px;">
+							<h4>Paul Graham <small>Investor and founder of Y Combinator</small></h4>
+							<p class="text-justify" style="padding-right:10px;">"The very best start-up ideas tend to have three things in common: they’re something the founders themselves want, that they themselves can build, and that few others realize are worth doing,” Graham said in a blog post in November.</p>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<img class="tabImage" src="img/quote3.png" alt="Another Quote" style="width:300px; height: 173px; padding-top:5px;">
+							<h4>Henry Ford <small>Founder of the Ford Motor Company</small></h4>
+							<p>"If you think you can do a thing or think you can't do a thing, you're right.</p>
+							<p>Failure is simply the opportunity to begin again, this time more intelligently.</p>
+							<p>Coming together is a beginning, staying together is progress, and working together is success."</p>
+						</div>
+						<div class="tab-pane" id="tab3">
+							<img class="tabImage" src="img/quote4.jpg" alt="And another" style="width:300px;height: 173px; padding-top:5px;">
+							<h4>Peter Drucker <small>American management consultant,</small></h4>
+							<p class="text-justify">"The entrepreneur always searches for change, responds to it, and exploits it as an opportunity."</p>
+						</div>
+					</div>
+				</div>					
+			</div><!-- col-sm-6 -->
+			<div class="col-sm-6 pull-left clearfix" style="padding-right:0px;">
+				<h2> Business Consultant </h2>
+				<img class="thumbnail pull-left" src="img/business-consultant.jpg" alt="Thumbnail" style="width:200px; margin: 0 20px 10px 0;">
+				<p class="text-justify">If you're a business expert--you're a whiz at marketing, reorganization, setting up franchises, retooling the company image, or any number of other specialties--then you've got the right stuff to be a business consultant. Instead of reporting to the office every day as a company man or woman,</p>
+				<button type="button" class="btn btn-info btn-sm pull-right" data-toggle="collapse" data-target="#para">Read more</button>
+				<div id="para" class="collapse">
+					<p>you'll work as an independent contractor on special projects for a number of clients. The advantages to this business are that you can work at home and you get the excitement and pacing of the corporate world without having to live it on a 9-to-5 basis. You'll need a strong background in your area of expertise coupled with stellar marketing skills to convince potential clients of your worth. You'll also need excellent communication and people skills--you'll be going into the company as an outsider, which can be good or bad, depending on the interpersonal culture of the company.</p>
+				</div><!-- read more collapse-->
+			</div>
+			<div class="col-sm-6" style="padding-right:0px; padding-top:5px;">
+				<hr style="width:300px;">
+				<h2>Commercial Leasing Agent</h2>
+				<img class="thumbnail pull-left" src="img/lease.jpg" alt="thumbnail" style="width:200px; margin: 0 20px 10px 0;">
+				<p class="text-justify">Educating yourself about the laws of commercial real estate leases and contracts can really pay off, especially if you apply this newfound knowledge and become a commercial leasing agent. A commercial leasing agent service can be set in motion for less than $10,000, and can return as much as $100,000 per year in income.</p>
+				<button type="button" class="btn btn-info btn-sm pull-right" data-toggle="collapse" data-target="#para1">Read more</button>
+				<div id="para1" class="collapse">
+					<p> In exchange for your services you charge the landlord of the building one month's rent as your fee, or leasing commission. Should another real estate or leasing agent be involved in the transaction, you would simply split the fee with that person or company. Commercial leasing is very straightforward, but you'll still want to extensively research the topic as well as check local regulations in terms of the legalities of becoming a leasing agent in your community.</p>
+				</div><!-- read more collapse-->
+			</div>
+		</div><!-- container end -->
+		<hr>
+	</div>
+
+	<footer>
+		<div id="footer">
+			<div class="container" style="padding:0;">
+				<div class="col-sm-4 pull-left">
+					<img src="img/logo-color.png" alt="footer logo" style="width:60px; padding-top:10px;">
+				</div>
+				<div class="pull-left">
+					<img src="img/margin.png" alt="|" style="width:1px;height: 130px; padding-top:25px;">
+				</div>
+				<div class="col-sm-4 followus pull-left">
+					<p>follow us on.</p>
+					<a href="#"><i class="fa fa-facebook-square icon fa-3x" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter-square icon fa-3x" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square icon fa-3x" aria-hidden="true"></i></a>
+					<p class="text-center" style="padding-top:20px; padding-bottom:10px;">Copyright .<span class="usricn"><i class="fa fa-copyright" aria-hidden="true"></i></span>clintjose08@gnail.com</p>
+				</div>
+				<div class="pull-left">
+					<img src="img/margin.png" alt="|" style="width:1px;height: 130px; padding-top:25px;">
+				</div>
+				<div class="col-sm-4 followus pull-left">
+					<ul style="padding-top: 20px; text-align:center;" id="footerleft">
+						<li><a href="#" > Subscribe</a></li>
+						<li><a href="#" > Tearms of use</a></li>
+						<li><a href="#" > Site Map</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 abc" style="padding:0;">
+					<img src="img/footer.png" alt="footer image">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
