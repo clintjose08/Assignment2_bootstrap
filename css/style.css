@@ -99,7 +99,7 @@
 		footer
 ======================================
 */
-.abc{
+#footerimg{
 	margin: 0;
 	border:0;
 	width: 100%;
@@ -153,6 +153,7 @@
 	color:#ea6525;
 }
 @media (max-width: 480px){
+
 	.navbar-button{
 		padding: 0px;
 		margin: 0px;
